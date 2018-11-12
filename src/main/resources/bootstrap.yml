@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zslSulin/spring-cloud-config.git
+          search-paths: config-files/config
+          default-label: master
+          username: zsldeyou@126.com
+          password: password.1/2
+
+server:
+  port: 1101
